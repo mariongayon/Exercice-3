@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Chess
 {
-	public class Move
+	public interface IMove
 	{
+
 	}
 }
