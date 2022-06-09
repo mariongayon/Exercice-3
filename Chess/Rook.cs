@@ -14,6 +14,16 @@ namespace Chess
             this.color = color;
         }
 
+        public bool CanCastle()
+        {
+            return false;
+        }
+
+        public bool CanSkip()
+        {
+            return false;
+        }
+
         public List<ProspectiveMove> Capabilities()
         {
             List<ProspectiveMove> list = new List<ProspectiveMove>();
@@ -33,6 +43,11 @@ namespace Chess
         public IPiece.Color GetColor()
         {
             return color;
+        }
+
+        public bool IsPawn()
+        {
+            return false;
         }
     }
 }
